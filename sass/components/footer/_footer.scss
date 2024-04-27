@@ -1,0 +1,114 @@
+footer {
+    background-color: $color__main;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    margin-top: 3rem;
+    a:hover {
+        cursor: pointer;
+    }
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+        }
+    }
+    .footer-menus {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 800px;
+        text-align: center;
+        @media (min-width: 400px) {
+                justify-content: space-between;
+                text-align: left;
+        }
+        .footer-navigation {
+            ul {
+                padding: 0;
+                margin-left: .5rem;
+            }
+        }
+        .contact__info {
+            margin-left: .5rem;
+            // text-align: center;
+            h3 {
+                margin: 0;
+                font-size: 1.25rem;
+            }
+            a {
+                text-decoration: none;
+                color: $color__font__darkgray;
+            }
+            a:hover {
+                color: $color__darkpink;
+                cursor: pointer;
+                
+    }
+            }
+        }
+        .contact__wrap {
+            p {
+                margin: 0;
+            }
+        }
+        .social_icons {
+            text-align: center;
+            nav ul{
+                display: flex;
+                padding: 0;
+                margin-left: 1rem;
+                height: 70px;
+                li {
+                    margin: .5rem;
+                }
+            }
+            svg {
+                width: 30px;
+                fill: $color__font__darkgray;
+            }
+            svg:hover {
+                fill: $color__background-button;
+            }
+            a {
+                color: $color__font__darkgray;
+                text-decoration: none ;
+                
+            }
+            a:hover {
+                color: $color__darkpink;
+                cursor: pointer;
+    }
+            }
+            
+        }
+        .footer-navigation {
+            a {
+            color: $color__font__darkgray;
+            }
+            a:hover {
+                color: $color__darkpink;
+                cursor: pointer;
+            }
+        }
+    .site-info {
+        text-align: center;
+        p {
+            margin: 0;
+            font-size: 12px;
+        }
+        a {
+            text-decoration: none ;
+            color: navy;
+        }
+        a:hover {
+            color: $color__darkpink;
+        }
+        @media (min-width:768px) {
+            
+            p {
+                font-size: .75rem;
+            }
+        }
+    }
+

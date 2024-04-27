@@ -1,0 +1,33 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+@mixin cta-btn {
+	font-size: 0.75rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: $color__background-button;
+	color: $color__font__darkgray;
+	border-radius: 5px;
+	padding: 0.3rem 0.5rem;
+	width: fit-content;
+	margin: 0 auto;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	text-decoration: none;
+	&:hover {
+	  background-color: #f9d0e1;
+	}
+  
+	@media screen and (min-width: 768px) {
+	  font-size: 1rem;
+	  padding: 0.4rem 1rem;
+	}
+  }

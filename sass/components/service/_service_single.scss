@@ -1,0 +1,63 @@
+.service__page__wrap {
+    margin: 5rem 1rem 2rem 1rem;
+    p {
+        white-space: pre-line;
+    }
+    h1 {
+        text-align: center;
+    }
+    .service__subtitle {
+        text-align: center;
+        font-style: italic;
+    }
+    .service__descriptions {
+        text-align: center;
+    }
+    .service_home_title {
+        h2 {
+            white-space: pre-line;
+            text-align: center;
+        }
+    }
+    .issues__wrap {
+        background-color: $color__base1;
+        padding: .5rem;
+        max-width: 600px;
+        margin-bottom: 1rem;
+        h3 {
+            margin-top: 0;
+        }
+    }
+    .service__button{
+        text-align: center;
+        margin: 2rem;
+        margin-bottom: 4rem;
+        a {
+            @include cta-btn;
+       } 
+    }
+    @media (min-width:768px) {
+        margin: 7rem 1.5rem 4rem 1.5rem;
+        .service__img__age {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            img {
+                border-radius: 3px;
+                max-width: 500px;
+            }
+        }
+        .issues__wrap {
+            padding: 1rem;
+        }
+    }
+    @media (min-width: 1000px) {
+        margin: 7rem auto 5rem auto;
+        max-width: 800px;
+        .issues__wrap {
+            padding: 1.5rem;
+            max-width: 800px;
+        }
+    }
+
+}

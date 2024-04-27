@@ -1,0 +1,113 @@
+.our__team__wrap {
+    margin: 6rem 1rem 2rem 1rem;
+
+    .staff__img {
+        text-align: center;
+
+        img {
+            max-width: 150px;
+            margin-top: 2rem;
+        }
+
+    }
+
+    .our__team__content {
+        background-color: $color__base1;
+        padding: 1rem;
+        margin: 1rem .5rem;
+
+        h3 {
+            margin: 0;
+        }
+
+        .ourteam__name {
+            text-align: center;
+            margin-bottom: 1rem;
+
+            h3, p {
+                margin: 0;
+            }
+        }
+
+        .specialty__text {
+            white-space: pre-line;
+
+            p {
+                margin: 0;
+                font-size: .75rem;
+            }
+        }
+
+        .learn__more {
+            text-align: center;
+            margin: 1rem 0;
+
+            a {
+            @include cta-btn;
+            }
+        }
+
+        .book__now {
+            text-align: center;
+            margin: 1rem 0;
+
+            a {
+            @include cta-btn;
+            }
+
+        }
+    }
+
+    @media (min-width: 600px) {
+
+        .img__name__wrap {
+            display: flex;
+            align-items: center;
+        }
+
+        .staff__img {
+
+            img {
+                margin-top: 0;
+            }
+        }
+
+        .our__team__content {
+            flex-grow: 1;
+        }
+    }
+
+    @media (min-width:768px) {
+        margin: 7rem 1.5rem 0 1.5rem;
+
+        .staff__img {
+            img {
+                max-width: 200px;
+            }
+        }
+
+        .our__team__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 300px;
+
+            .button__wrap {
+                flex-shrink: 0;
+                
+                .learn__more, 
+                .book__now {
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 900px) {
+        margin: 7rem auto 0 auto;
+        max-width: 900px;
+        .our__team__content {
+            padding: 1rem 2rem;
+    }
+    }
+}

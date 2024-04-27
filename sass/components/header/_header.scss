@@ -1,0 +1,96 @@
+.site-header {
+    width: 100%;
+    background-color: $color__main;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    padding: 0 .5rem;
+    @media (min-width: 768px) {
+        padding: 0 1rem;
+    }
+
+    .site-branding {
+        display: flex;
+        align-items: center;
+        .site-icon {
+            img {
+                max-width: 70px;
+            }
+        }
+        img {
+        max-width: 180px;
+        padding: 5px;
+        vertical-align: middle;
+        a {
+            cursor: pointer;
+            }
+        @media (min-width: 450px) {
+            img {
+                max-width: 200px;
+            }
+        }
+        @media (min-width: 768px) {
+            max-width: 250px;
+            .site-icon {
+                img {
+                    max-width: 90px;
+                }
+            }
+        }
+        }
+    }
+.nav-menu {
+    justify-content: flex-end;
+ 
+    li {
+        margin: .5rem;
+        a {
+            color: $color__font__darkgray;
+            font-size: .75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        a:hover {
+            color: $color__darkpink;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        li a {
+            font-size: 1rem;
+        }
+    }
+    @media (min-width: 1000px) {
+        li {
+            margin: 1rem;
+        }
+    }
+    .sub-menu {
+        flex-direction: column;
+        background-color: $color__base1;
+        li a {
+            font-size: .75rem;
+        }
+    }
+}
+
+.site-title {
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 10px;
+}
+
+.main-navigation{
+    button {
+        @include cta-btn;
+    }
+}
+}

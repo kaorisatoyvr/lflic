@@ -1,0 +1,121 @@
+/* hamburger menu */
+.custom-hamburger-menu {
+    position: absolute;
+    right: 0;
+}
+.hamburger {
+    position: relative;
+    display: block;
+    width: 60px;
+    cursor: pointer;
+    padding-top: 0.25rem;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    z-index: 9999;
+}
+
+
+.hamburger button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover, .widget a.button:hover {
+    background-color: none!important;
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: $color__font__darkgray;
+    margin: 8px 0;
+    transition: 0.4s;
+}
+
+.hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-4px, 11px);
+}
+
+.hamburger.is-active::after {
+    transform: rotate(45deg) translate(-4px, -11px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover, .widget a.button:hover {
+    background-color: transparent;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    background-color: #a3c4f3e6;
+    padding-top: 120px;
+    transition: 0.4s;
+    .menu {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: $color__font__darkgray;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0 auto 0 2.5rem;
+        padding: 12px 16px;
+        // background-color: #efd7a3;
+        border-radius: 5PX;
+        padding: 8px;
+    }
+    a:hover {
+        background-color: #f9d0e1;
+        width: fit-content;
+        transition: 0.4s;
+    }
+    .sub-menu {
+        a {
+            font-size: 1rem;;
+        }
+    }
+    @media (min-width: 500px) {
+        a {
+            padding: 12px 16px;
+        }
+    }
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+#menu-hamburger-menu {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+#menu-hamburger-menu a {
+    font-size: 1rem;
+    color: #333333;
+}
+
+@media (min-width: 700px) {
+    .custom-hamburger-menu {
+        display: none;
+    }
+}
+
+/* remove default hamburgermenu */
+.menu-toggle {
+    display: none;
+}

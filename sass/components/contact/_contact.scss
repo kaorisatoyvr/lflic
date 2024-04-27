@@ -1,0 +1,16 @@
+.page__wrap {
+    margin: 7rem 1rem 1rem 1rem;
+    input, textarea {
+        background-color: $color__base2;
+    }
+    .wpcf7-submit {
+            @include cta-btn;
+    }
+    @media (min-width:768px) {
+        margin: 7rem 1.5rem 0 1.5rem;
+    }
+    @media (min-width: 800px) {
+        margin: 7rem auto 0 auto;
+        max-width: 800px;
+    }
+}

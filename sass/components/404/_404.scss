@@ -1,0 +1,19 @@
+.site-main {
+    .error-404 {
+        max-width: 800px;
+        margin: 6rem 1rem 1rem 1rem;
+        h1 {
+            text-align: center;
+        }
+        .go__home {
+            a{
+                @include cta-btn; 
+            }
+            text-align: center;
+            margin: 2rem auto;
+        }
+        .search__bar {
+            text-align: center;
+        }
+    }
+}

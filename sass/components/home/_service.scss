@@ -1,0 +1,113 @@
+.service__home {
+    background-color: $color__base2;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+    // position: relative;
+    scroll-margin-top: 90px;
+
+    h1 {
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .service__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .service__wrap {
+        margin: 0 auto;
+        text-align: center;
+        padding: 1rem;
+
+        .service__bg {
+            background-color: $color__base1;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            max-width: 280px;
+            height: 300px;            
+            z-index: -1;
+
+            .service__image {
+                max-width: 280px;
+
+                img {
+                    text-align: center;
+                }
+            }
+
+            h3 {
+            text-align: center;
+            }
+        }
+
+        .learn__more {
+            a {
+                @include cta-btn;
+            }
+        }
+
+        @media ( min-width: 768px ) {
+            .service__bg {
+                height: 320px;
+
+                h3 {
+                   font-size: 1rem;
+               }
+            }
+
+            .service__container {
+                .service__bg {
+                    height: 400px;
+                    margin-bottom: 1rem;
+                }
+            }
+        }        
+    }
+}
+
+.button__bottom {
+    margin-top: 3rem;
+
+    a {
+        @include cta-btn;
+    }
+}
+
+.first__step__wrap {
+
+    .first__step__image {
+        text-align: center;
+        figure {
+            width: calc(100% + 2rem);
+            margin: 1rem -1rem 0 -1rem;
+        }
+    }
+
+    .first__step__button {
+        text-align: center;
+        margin-bottom: 1rem;
+
+        a {
+            @include cta-btn;
+        }
+    }
+
+    @media ( min-width:768px ) {
+        display: flex;
+        align-items: center;
+
+        .first__step__image {
+            flex: 1;
+
+            img {
+                border-radius: 3px;
+                object-fit: cover;
+                min-height: 500px;
+            }
+        }
+
+        .firststep__text__wrap {
+            flex: 1;
+        }
+    }
+}
